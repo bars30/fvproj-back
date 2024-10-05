@@ -1,9 +1,8 @@
-
 {
   "version": 2,
   "functions": {
     "api/**/*.js": {
-      "maxDuration": 55
+      "maxDuration": 55 
     }
   },
   "routes": [
