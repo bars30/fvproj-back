@@ -123,7 +123,7 @@ app.post('/login', async (req, res) => {
 });
 
 // Define the /change-password route for changing user password
-app.patch('/change-password', verifyToken, async (req, res) => {
+app.post('/change-password', verifyToken, async (req, res) => {
     const { email, oldPassword, newPassword } = req.body;
 
     if (!email || !oldPassword || !newPassword) {
